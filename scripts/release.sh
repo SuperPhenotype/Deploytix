@@ -161,7 +161,7 @@ generate_changelog() {
 
     # Print range summary.
     if [[ -n "$prev_tag" ]]; then
-        echo "**${#commits[@]} commits** since [\`${prev_tag}\`](https://github.com/MasterGenotype/Deploytix/releases/tag/${prev_tag})"
+        echo "**${#commits[@]} commits** since [\`${prev_tag}\`](https://github.com/SuperPhenotype/Deploytix/releases/tag/${prev_tag})"
         echo
     fi
 
@@ -229,7 +229,7 @@ elif [[ ! -f "$NOTES" ]]; then
             cat <<HEADER
 # Deploytix $TAG
 
-Snapshot of \`main\` at commit [\`$commit\`](https://github.com/MasterGenotype/Deploytix/commit/$(git rev-parse HEAD)). Built with \`makepkg\` on Arch/Artix Linux.
+Snapshot of \`main\` at commit [\`$commit\`](https://github.com/SuperPhenotype/Deploytix/commit/$(git rev-parse HEAD)). Built with \`makepkg\` on Arch/Artix Linux.
 
 ## What's changed
 
@@ -255,7 +255,7 @@ sudo pacman -U \\
 ## Build it yourself
 
 \`\`\`sh
-curl -LO https://github.com/MasterGenotype/Deploytix/releases/download/$TAG/PKGBUILD
+curl -LO https://github.com/SuperPhenotype/Deploytix/releases/download/$TAG/PKGBUILD
 makepkg -sCf
 \`\`\`
 
@@ -307,7 +307,7 @@ if ((DO_PUBLISH)); then
     else
         run "gh ${args[*]@Q} ${real_assets[*]@Q}"
     fi
-    log "done — https://github.com/MasterGenotype/Deploytix/releases/tag/$TAG"
+    log "done — https://github.com/SuperPhenotype/Deploytix/releases/tag/$TAG"
 else
     log "staged release in $STAGE_DIR (skip publish)"
 fi

@@ -42,7 +42,7 @@ PKGNAME="gamescope-git"
 PKGBUILD_SRC="/usr/share/deploytix/gamescope/PKGBUILD"
 GUARD_FLAG="/run/deploytix/gamescope-update-in-progress"
 BUILD_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/deploytix/gamescope-update"
-REMOTE="https://github.com/MasterGenotype/gamescope.git"
+REMOTE="https://github.com/SuperPhenotype/gamescope.git"
 BRANCH="gamescope-ba"
 
 # Immutable-backend markers.  These are the same signals deploytix itself

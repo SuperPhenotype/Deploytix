@@ -71,7 +71,7 @@ makedepends=(
     'glm'
 )
 
-source=("gamescope::git+https://github.com/MasterGenotype/gamescope.git#branch=gamescope-ba")
+source=("gamescope::git+https://github.com/SuperPhenotype/gamescope.git#branch=gamescope-ba")
 sha256sums=('SKIP')
 
 pkgver() {

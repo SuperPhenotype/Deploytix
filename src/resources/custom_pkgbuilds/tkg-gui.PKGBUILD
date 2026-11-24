@@ -12,7 +12,7 @@ pkgver=r39.ga8cae66
 pkgrel=1
 pkgdesc="Graphical interface for building custom Linux kernels using the linux-tkg build system"
 arch=('x86_64')
-url="https://github.com/MasterGenotype/tkg-gui"
+url="https://github.com/SuperPhenotype/tkg-gui"
 license=('unknown')
 depends=('gcc-libs' 'glibc' 'libxkbcommon' 'libxcb' 'wayland' 'mesa' 'openssl')
 makedepends=('cargo' 'git')
@@ -21,7 +21,7 @@ optdepends=(
 )
 provides=('tkg-gui')
 conflicts=('tkg-gui')
-source=("tkg-gui::git+https://github.com/MasterGenotype/tkg-gui.git")
+source=("tkg-gui::git+https://github.com/SuperPhenotype/tkg-gui.git")
 sha256sums=('SKIP')
 
 pkgver() {

@@ -66,8 +66,8 @@ GAMESCOPE_PKG_DIR=""
 # Remote URLs used when BUILD_SOURCE=clone.
 # tkg-gui's PKGBUILD already carries the correct SSH URL; it is listed here
 # for reference only. gamescope requires an explicit rewrite in clone mode.
-TKG_GUI_REMOTE="git+ssh://git@github.com/MasterGenotype/tkg-gui.git"
-GAMESCOPE_REMOTE="git+ssh://git@github.com/MasterGenotype/gamescope.git#branch=gamescope-ba"
+TKG_GUI_REMOTE="git+ssh://git@github.com/SuperPhenotype/tkg-gui.git"
+GAMESCOPE_REMOTE="git+ssh://git@github.com/SuperPhenotype/gamescope.git#branch=gamescope-ba"
 # Staging directory — single source of truth fed to both the local artools repo
 # and the live-overlay embedded repo, eliminating version drift between the two.
 # Resolved in resolve_paths() next to the workspace, NOT under /tmp: a deployed
@@ -758,7 +758,7 @@ build_tkg_gui_packages() {
 # gamescope (always built)
 #   local:  no source rewrite — PKGBUILD uses source=("gamescope::git+file://$(cd .. && pwd)")
 #           which evaluates to vendor/gamescope when makepkg runs from vendor/gamescope/pkg/
-#   clone:  rewrite source → MasterGenotype fork SSH URL on gamescope-ba branch
+#   clone:  rewrite source → SuperPhenotype fork SSH URL on gamescope-ba branch
 build_gamescope_packages() {
     if "$DRY_RUN"; then
         msg2 "[dry-run] Would build gamescope (${BUILD_SOURCE} mode) from ${GAMESCOPE_PKG_DIR}"

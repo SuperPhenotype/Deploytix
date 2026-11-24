@@ -5,7 +5,7 @@ edition = "2021"
 authors = ["superphenotype"]
 description = "Dependency resolution and queries against the pacman/libalpm package universe"
 license = "GPL-3.0-or-later"
-repository = "https://github.com/MasterGenotype/Deploytix"
+repository = "https://github.com/SuperPhenotype/Deploytix"
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }

@@ -20,7 +20,7 @@ Can also be built into a package and included in an ISO for installation via boo
 ### From Source
 
 ```bash
-git clone https://github.com/MasterGenotype/Deploytix
+git clone https://github.com/SuperPhenotype/Deploytix
 cd Deploytix
 cargo build --release
 
